@@ -1,0 +1,70 @@
+@import "compass/reset";
+
+$primary: #FFF6F6;
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 1em;
+  color: darken($primary, 30%);
+}
+
+a:hover,
+a {
+  color: darken($primary, 30%);
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+.navbar {
+  background: darken($primary, 3%);
+}
+
+.nav-pills .nav-item.open .nav-link, .nav-pills .nav-item.open .nav-link:focus, .nav-pills .nav-item.open .nav-link:hover, .nav-pills .nav-link.active, .nav-pills .nav-link.active:focus, .nav-pills .nav-link.active:hover {
+  background: darken($primary, 5%);
+  color: darken($primary, 30%);
+}
+
+#intro {
+  background: url('../assets/bg.png') no-repeat 0 0;
+  background-size: cover;
+
+  .profile-picture {
+    background: url('https://scontent.fbeg2-1.fna.fbcdn.net/v/t1.0-9/21751510_2054697231222708_8047162648886874302_n.jpg?oh=ffb1708c47c8141ff312bd81f79e6dc4&oe=5A7AD4C4') no-repeat;
+    height: 200px;
+    width: 200px;
+    background-size: contain;
+    border-radius: 100px;
+  }
+}
+
+section {
+  height: 100%;
+
+  .container {
+    height: 100%;
+    text-align: center;
+  }
+
+  &.odd {
+    background: $primary;
+  }
+
+  &.even {
+    background: #fff;
+  }
+}
+
+.vertical-align {
+  top: 50%;
+  position: relative;
+  transform: translate(0, -50%);
+}
