@@ -68,3 +68,40 @@ section {
   position: relative;
   transform: translate(0, -50%);
 }
+
+.loading {
+  position: fixed;
+  z-index: 2000;
+  height: 120px;
+  width: 120px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  &:before {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $primary;
+  }
+}
+
+.spinner {
+  border: 16px solid darken($primary, 10%);
+  border-top: 16px solid $primary;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
