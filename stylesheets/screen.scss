@@ -1,5 +1,3 @@
-@import "compass/reset";
-
 $primary: #FFF6F6;
 
 html,
@@ -8,12 +6,12 @@ body {
   height: 100%;
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 1em;
-  color: darken($primary, 30%);
+  color: #6B818C;
 }
 
 a:hover,
 a {
-  color: darken($primary, 30%);
+  color: #6B818C;
 }
 
 h1 {
@@ -38,12 +36,24 @@ h2 {
   background-size: cover;
 
   .profile-picture {
-    background: url('https://scontent.fbeg2-1.fna.fbcdn.net/v/t1.0-9/21751510_2054697231222708_8047162648886874302_n.jpg?oh=ffb1708c47c8141ff312bd81f79e6dc4&oe=5A7AD4C4') no-repeat;
+    background: url('../assets/profile.jpg') no-repeat;
     height: 200px;
     width: 200px;
     background-size: contain;
     border-radius: 100px;
   }
+}
+
+#contact {
+  input.btn {
+    width: 100%;
+    background: darken($primary, 10%);
+  }
+}
+
+ul.contact {
+  list-style: none;
+  font-size: 18px;
 }
 
 section {
