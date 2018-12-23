@@ -115,3 +115,47 @@ section {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+  body {
+    font-size: 1em;
+  }
+
+  .logo {
+    max-width: 120px;
+  }
+
+  .contact {
+    list-style-type: none;
+    text-align: left;
+    font-size: 1.2em;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+  body {
+    font-size: 1.2em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  .logo {
+    max-width: 150px;
+  }
+}
